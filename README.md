@@ -53,3 +53,5 @@ To build the library run:
 mvn package
 ```
 or to download the latest version of the library with all dependencies packaged visit the [releases](https://github.com/ceMigaming/Basket/releases/tag/release) page.
+## JavaDoc
+JavaDoc can be found on Github Pages [here](https://cemigaming.github.io/Basket/).
