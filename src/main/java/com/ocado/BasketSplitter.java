@@ -38,7 +38,7 @@ public class BasketSplitter {
     public BasketSplitter(final String absolutePathToConfigFile) throws IOException {
         Gson gson = new Gson();
         Type configMapType = new TypeToken<Map<String, List<String>>>() {}.getType();
-        config = gson.fromJson(IOUtils.loadFileAsString(absolutePathToConfigFile), configMapType);
+        config = gson.fromJson(IOUtils.readFileAsString(absolutePathToConfigFile), configMapType);
     }
 
     /**

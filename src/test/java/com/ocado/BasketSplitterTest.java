@@ -37,7 +37,7 @@ public class BasketSplitterTest {
                 "{\n\"Carrots (1kg)\": [\"Express Delivery\", \"Click&Collect\"],\n\"Cold Beer (330ml)\": [\"Express Delivery\"],\n\"Steak (300g)\": [\"Express Delivery\", \"Click&Collect\"],\n\"AA Battery (4 Pcs.)\": [\"Express Delivery\", \"Courier\"],\n\"Espresso Machine\": [\"Courier\", \"Click&Collect\"],\n\"Garden Chair\": [\"Courier\"]\n}";
         try {
             String readFile =
-                    IOUtils.loadFileAsString(Path.of("config.json").toAbsolutePath().toString());
+                    IOUtils.readFileAsString(Path.of("config.json").toAbsolutePath().toString());
             assertEquals(readFile, expectedResult);
         } catch (IOException e) {
             e.printStackTrace();

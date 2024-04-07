@@ -17,7 +17,7 @@ public class IOUtils {
      * @return String containing all lines of the file.
      * @throws IOException if file can not be found.
      */
-    public static final String loadFileAsString(final String absolutePath) throws IOException {
+    public static final String readFileAsString(final String absolutePath) throws IOException {
         String lines = "";
         File myObj = new File(absolutePath);
         Scanner myReader = new Scanner(myObj);
