@@ -47,3 +47,9 @@ The library is implemented using Java 17 and Maven. It's using Gson library for 
 The problem is a special case of Set Cover Problem which is NP-hard. The solution exploits the fact that maximum number of delivery methods is 10 and maximum number of products in basket is 100 which makes the problem solvable in a reasonable time. The algorithm uses the brute force approach to find the optimal solution. It generates all possible combinations of delivery methods and selects the one with the smallest number of delivery methods and the largest number of products in the basket. The algorithm has a time complexity of O(2^n) where n is the number of delivery methods. The algorithm is implemented in the `BasketSplitter#split` method.
 ## Unit tests
 The library contains unit tests for `BasketSplitter#split` method as well as for the utility method `IOUtils#readFileAsString`.
+## Installation
+To build the library run:
+```shell
+mvn package
+```
+or to download the latest version of the library with all dependencies packaged visit the [releases](https://github.com/ceMigaming/Basket/releases/tag/release) page.
